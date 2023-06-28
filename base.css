@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Grtsk';
+    src: url(./fonts/GrtskTera-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url(./fonts/RobotoFlex.ttf);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Grtsk;
+    font-size: 0.875em;
+    color: #fff;
+    background-color: #232325;
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphics__gradient{
+    background: linear-gradient(180deg, #2F4AD3 0%, rgba(47, 74, 211, 0.00) 100%);
+    filter: blur(2.5px);
+}
+
+/* HEADER */
+
+.header{
+    margin-top: 39px;
+}
+
+.header::before{
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, #2F4AD3 6%, rgba(47, 74, 211, 0.10) 60%);
+    filter: blur(36.5px);
+    width: 100%;
+    height: 171px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.container-wide{
+    /* max-width: 1378px; */
+    max-width: 72.75%; 
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo{
+    margin-right: 9.97%;
+}
+
+.header__nav-list{
+    display: flex;
+    width: 110%;
+}
+
+.header__nav-item:not(:last-child){
+    margin-right: 26px;
+}
+
+.header__contacts{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20.25%;
+}
+
+.header__contacts-city{
+    margin-right: 26px;
+}
+
+
+/**** MAIN ****/
+/**************/
+/* DESIGNING */
+
+.main{
+    flex: 1 1 auto;
+}
+
+.container{
+    max-width: 64.6%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20%;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.designing{
+    position: relative;
+    display: inline-block;
+    margin-top: 7.84%;
+    max-width: 34.399%;
+}
+
+.designing__title{
+    font-size: 2.285712em;
+    margin-bottom: 5.1%;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.designing__subtitle{
+    font-family: RobotoFlex;
+    font-size: 1.145em;
+    margin-bottom: 11.95%;
+}
+
+.button{
+    font-family: Grtsk;
+    font-size: 1.072em;
+    border-radius: 19px;
+    background-color: #2F4AD3;   
+    color: #fff;
+    padding: 7px 28px 11px 28px;
+    cursor: pointer;
+}
+
+.designing__graphics--house{
+    position: absolute;
+    top: 21%;
+    left: 69%;
+    width: 118%;
+}
+
+.designing__graphics--background{
+    position: absolute;
+    top: 33.5%;
+    right: 45%;
+    z-index: -1;
+    width: 95%;
+}
+
+/* PRODUCTION */
+
+.production{
+    max-width: 27.73%;
+    margin-top: 10.85%;
+}
+
+.production__list{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.production__item:not(:last-child){
+    margin-bottom: 8.99%;
+}
+
+.production__item--linear-object{
+    max-width: 60%;
+}
+
+.production__item--gasification{
+    padding-left: 24%;
+}
+
+.production__item--electricity{
+    padding-left: 33%;
+}
+
+.production__item--connection{
+    padding-left: 55%;
+}
+
+.production__item--cadastral{
+    padding-left: 33%;
+}
+
+.production__item--geodesik{
+    padding-left: 25%;
+}
+
+.production__item--building{
+    max-width: 10%;
+}
+
+/* PROGRESS */
+
+.content__wrapper--bottom{
+    position: relative;
+}
+
+.progress{
+    margin-top: -0.45%;
+}
+
+.progress__title{
+    font-size: 1.143712em;
+    font-weight: 500;
+}
+
+.progress__title:not(:last-child){
+    margin-bottom: 7.6%;
+}
+
+.progress__title-focus{
+    color: #6980F5;
+    font-size: 1.2491em;
+}
+
+/* SOCIAL */
+
+.social{
+    display: flex;
+    flex-direction: column;
+}
+
+.social__link{
+    position: absolute;
+    left: -122px;
+}
+
+.social__link--tg{
+    top: 30%;
+}
+
+.social__link--wa{
+    top: 58%;
+}
+
+.social__link--mail{
+    top: 91%;
+}
+
+/* PARTNERS */
+
+.partners{
+    width: 38.022%;
+    margin-top: 5.52%;
+    display: flex;
+    align-items: center;
+}
+
+.partner__icon{
+    cursor: pointer;
+}
+
+.partner__icon--rosseti{
+    margin-right: 8.93%;
+}
+
+.partner__icon--gasprom{
+    margin-right: 8.93%;
+}
+
+.partner__icon--dom{
+    padding-top: 6.96%;
+}
+
+/* FOOTER */
+
+.footer__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content-team{
+    color: #BDBDBD;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.footer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #283472;
+}
+
+@media (min-width: 2000px){
+    body{
+        font-size: 1.35em;
+    }
+
+    .header__logo img{
+        min-width: 145%;
+    }
+
+    .header__contacts{
+        margin-left: 11%;
+    }
+
+    .social__link svg{
+        width: 1.35em;
+        height: 1.35em;
+    }
+}
+
+@media (min-width: 3000px){
+    body{
+        font-size: 1.75em;
+    }
+
+    .header__logo img{
+        min-width: 145%;
+    }
+
+    .production {
+        max-width: 27.73%;
+    }
+
+    .partner__icon--dom {
+        padding-top: 1.6em;
+    }
+
+    .social__link svg{
+        width: 1.75em;
+        height: 1.75em;
+    }
+}
+
+
