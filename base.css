@@ -76,6 +76,25 @@ body{
     margin-right: 26px;
 }
 
+.animation__line{
+    position: relative;
+}
+
+.animation__line::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s ease-in;
+}
+
+.animation__line:hover::after {
+    width: 100%;
+  }
+
 .header__contacts{
     display: flex;
     flex-wrap: wrap;
@@ -130,11 +149,15 @@ body{
 .button{
     font-family: Grtsk;
     font-size: 1.072em;
-    border-radius: 19px;
+    border-radius: 1.2em;
     background-color: #2F4AD3;   
     color: #fff;
-    padding: 7px 28px 11px 28px;
+    padding: 1.96% 6.9% 2% 6.98%;
     cursor: pointer;
+}
+
+.button:hover{
+    background-color: #2e42a3;
 }
 
 .designing__graphics--house{
@@ -270,6 +293,13 @@ body{
     padding-top: 6.96%;
 }
 
+.partner__icon--rosseti svg:hover,
+.partner__icon--gasprom svg:hover,
+.partner__icon--dom svg:hover{
+    fill: #e2e2e2;
+    cursor: default;
+}
+
 /* FOOTER */
 
 .footer__content{
@@ -292,46 +322,5 @@ body{
     background-color: #283472;
 }
 
-@media (min-width: 2000px){
-    body{
-        font-size: 1.35em;
-    }
-
-    .header__logo img{
-        min-width: 145%;
-    }
-
-    .header__contacts{
-        margin-left: 11%;
-    }
-
-    .social__link svg{
-        width: 1.35em;
-        height: 1.35em;
-    }
-}
-
-@media (min-width: 3000px){
-    body{
-        font-size: 1.75em;
-    }
-
-    .header__logo img{
-        min-width: 145%;
-    }
-
-    .production {
-        max-width: 27.73%;
-    }
-
-    .partner__icon--dom {
-        padding-top: 1.6em;
-    }
-
-    .social__link svg{
-        width: 1.75em;
-        height: 1.75em;
-    }
-}
 
 
