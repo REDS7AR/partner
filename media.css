@@ -1,3 +1,5 @@
+/* HOME */
+
 @media (min-width: 2000px){
     body{
         font-size: 1.35em;
@@ -37,5 +39,28 @@
     .social__link svg{
         width: 1.75em;
         height: 1.75em;
+    }
+}
+
+
+/* PROJECTS */
+
+@media(min-width: 2000px){
+    .cards{
+        margin-bottom: 5%;
+    }
+
+    .card__subtitle::before{
+        content: "";
+        display: block;
+        background-image: url(./../img/projects/copy.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2em;
+        height: 2.55em;
+        position: absolute;
+        top: 20%;
+        right: -21%;
+        z-index: 10;
     }
 }
