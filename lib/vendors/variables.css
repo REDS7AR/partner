@@ -1,0 +1,23 @@
+/* --- VARIABLES --- */
+
+/* COLORS */
+
+:root{
+    --text-color: #FFFFFF;
+    --accent-color: #6980F5;
+    --bg-color: #232325;
+    --soft-color: #BDBDBD;
+    --line-color: #283472;
+    --gradient-color: #2F4AD3;
+    --svg-fill: #e2e2e2;
+    --card-back:#929292;
+    --focus: #2B43BF;
+}
+
+/* BUTTON */
+
+:root{
+    --btn-color:#2F4AD3;
+    --btn-hover:#2e42a3;
+}
+

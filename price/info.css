@@ -1,0 +1,8 @@
+@import './../lib/vendors/variables.css';
+@import './../lib/vendors/fonts.css';
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

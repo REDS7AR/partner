@@ -1,22 +1,15 @@
-@font-face {
-    font-family: 'Grtsk';
-    src: url(./fonts/GrtskTera-Medium.ttf);
-}
-
-@font-face {
-    font-family: 'RobotoFlex';
-    src: url(./fonts/RobotoFlex.ttf);
-}
+@import './lib/vendors/variables.css';
+@import './lib/vendors/fonts.css';
 
 html{
     height: 100%;
 }
 
 body{
-    font-family: Grtsk;
+    font-family: Grtsk, sans-serif;
     font-size: 0.875em;
-    color: #fff;
-    background-color: #232325;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     height: 100%;
 }
 
@@ -27,7 +20,7 @@ body{
 }
 
 .graphics__gradient{
-    background: linear-gradient(180deg, #2F4AD3 0%, rgba(47, 74, 211, 0.00) 100%);
+    background: linear-gradient(180deg, var(--gradient-color), 0%, rgba(47, 74, 211, 0.00) 100%);
     filter: blur(2.5px);
 }
 
@@ -40,7 +33,7 @@ body{
 .header::before{
     content: "";
     display: block;
-    background: linear-gradient(180deg, #2F4AD3 6%, rgba(47, 74, 211, 0.10) 60%);
+    background: linear-gradient(180deg, var(--gradient-color) 6%, rgba(47, 74, 211, 0.10) 60%);
     filter: blur(36.5px);
     width: 100%;
     height: 171px;
@@ -145,9 +138,12 @@ body{
     line-height: 100%;
 }
 
-.designing__subtitle{
-    font-family: RobotoFlex;
+.subtitle{
+    font-family: Montserrat;
     font-size: 1.145em;
+}
+
+.designing__subtitle{
     margin-bottom: 11.95%;
 }
 
@@ -155,18 +151,14 @@ body{
     font-family: Grtsk;
     font-size: 1.072em;
     border-radius: 1.2em;
-    background-color: #2F4AD3;   
-    color: #fff;
+    background-color: var(--btn-color);   
+    color: var(--text-color);
     padding: 1.96% 6.9% 2% 6.98%;
     cursor: pointer;
 }
 
 .button:hover{
-    background-color: #2e42a3;
-}
-
-.accent-color{
-    color: #2B43BF;
+    background-color: var(--btn-hover);
 }
 
 .designing__graphics--house{
@@ -249,7 +241,7 @@ body{
 }
 
 .progress__title-focus{
-    color: #6980F5;
+    color: var(--accent-color);
     font-size: 1.2491em;
 }
 
@@ -305,7 +297,7 @@ body{
 .partner__icon--rosseti svg:hover,
 .partner__icon--gasprom svg:hover,
 .partner__icon--dom svg:hover{
-    fill: #e2e2e2;
+    fill: var(--svg-fill);
     cursor: default;
 }
 
@@ -318,7 +310,7 @@ body{
 }
 
 .footer__content-team{
-    color: #BDBDBD;
+    color: var(--soft-color);
     padding-top: 3px;
     padding-bottom: 5px;
 }
@@ -328,7 +320,7 @@ body{
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #283472;
+    background-color: var(--line-color);
 }
 
 

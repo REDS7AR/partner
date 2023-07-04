@@ -1,0 +1,27 @@
+@import './../lib/vendors/variables.css';
+@import './../lib/vendors/fonts.css';
+
+.main{
+    margin-top: 3.76%;
+}
+
+.slogan{
+    max-width: 54.37%;
+}
+
+.staff{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.staff__title{
+    display: inline-block;
+    margin-bottom: 42px;
+}
+
+.staff__img:not(:last-child){
+    margin-right: 45px;
+}

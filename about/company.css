@@ -1,0 +1,55 @@
+@import './../lib/vendors/variables.css';
+@import './../lib/vendors/fonts.css';
+
+.main{
+    margin-top: 3.86%;
+}
+
+.best{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.best__top{
+    display: inline-block;
+    max-width: 52%;
+}
+
+.best__bottom{
+    display: inline-block;
+    margin-top: 10.4%;
+    padding-left: 9.9%;
+    max-width: 35%;
+}
+
+.bottom__title{
+    position: relative;
+    font-size: 1.145em;
+    font-weight: 500;
+}
+
+.bottom__title::after{
+    content: "";
+    display: block;
+    width: 34.11%;
+    height: 1%;
+    background-color: var(--gradient-color);
+    position: absolute;
+    top: 65%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom__subtitle{
+    margin-top: 15.8%;
+    font-size: 1.145em;
+    font-weight: 400;
+}
+
+.bottom__image{
+    position: absolute;
+    top: 28%;
+    right: 9.8%;
+    width: 50%;
+}

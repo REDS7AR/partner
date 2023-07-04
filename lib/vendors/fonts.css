@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Grtsk';
+    src: url(./../../static/fonts/GrtskTera-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url(./../../static/fonts/RobotoFlex.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(./../../static/fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(./../../static/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(./../../static/fonts/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+

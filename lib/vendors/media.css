@@ -1,0 +1,65 @@
+/* HOME */
+
+@media (min-width: 2000px){
+    body{
+        font-size: 1.35em;
+    }
+
+    .header__logo img{
+        min-width: 145%;
+    }
+
+    .header__contacts{
+        margin-left: 11%;
+    }
+
+    .social__link svg{
+        width: 1.35em;
+        height: 1.35em;
+    }
+}
+
+@media (min-width: 3000px){
+    body{
+        font-size: 1.75em;
+    }
+
+    .header__logo img{
+        min-width: 145%;
+    }
+
+    .production {
+        max-width: 27.73%;
+    }
+
+    .partner__icon--dom {
+        padding-top: 1.6em;
+    }
+
+    .social__link svg{
+        width: 1.75em;
+        height: 1.75em;
+    }
+}
+
+/* PROJECTS */
+
+@media(min-width: 2000px){
+    .cards{
+        margin-bottom: 5%;
+    }
+
+    .card__subtitle::before{
+        content: "";
+        display: block;
+        background-image: url(./../img/projects/copy.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2em;
+        height: 2.55em;
+        position: absolute;
+        top: 20%;
+        right: -21%;
+        z-index: 10;
+    }
+}
